@@ -67,7 +67,7 @@ type ItemProps = ItemState &
 
 export const navigationItemCSS = ({ align }: ItemState) => ({
   alignItems: 'center',
-  background: 'rgba(255, 255, 255, 0.2)',
+  background: 'rgba(195, 195, 195, 0.7)',
   border: 0,
   borderRadius: '50%',
   color: 'white',
@@ -85,10 +85,10 @@ export const navigationItemCSS = ({ align }: ItemState) => ({
   [align]: 20, // 'left' | 'right'
 
   '&:hover': {
-    background: 'rgba(255, 255, 255, 0.3)',
+    background: 'rgba(195, 195, 195, 0.8)',
   },
   '&:active': {
-    background: 'rgba(255, 255, 255, 0.2)',
+    background: 'rgba(195, 195, 195, 0.6)',
   },
 });
 
