@@ -8,7 +8,6 @@ import { type PropsWithStyles } from '../types';
 import { className } from '../utils';
 import { getSource } from './component-helpers';
 import componentBaseClassNames from './componentBaseClassNames';
-import ReactPlayer from 'react-player';
 
 type Props = PropsWithStyles & {
   data: Object,
@@ -31,13 +30,13 @@ const View = (props: Props) => {
     src: getSource({ data, isFullscreen }),
   };
 
-  console.log(data, formatters, getStyles, index, isFullscreen, isModal);
-
+/*
   return (
     <Div
       css={getStyles(viewBaseClassName, props)}
       className={className(viewBaseClassName, { isFullscreen, isModal })}
     >
+
       <ReactPlayer
           url={"https://video.twimg.com/tweet_video/Eku-CH4X0AkN0ga.mp4"}
           controls = {true}
@@ -52,7 +51,7 @@ const View = (props: Props) => {
       />
     </Div>
   );
-/*
+  */
   return (
     <Div
       css={getStyles(viewBaseClassName, props)}
@@ -70,7 +69,6 @@ const View = (props: Props) => {
       />
     </Div>
   );
-  */
 };
 
 export default View;
